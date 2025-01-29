@@ -50,7 +50,7 @@ const Chat: React.FC = () => {
             const newMessages = [...messages, newMessage];
             setMessages(newMessages);
 
-            const response = await axios.post<ApiResponse[]>("http://localhost:3000/chat", {
+            const response = await axios.post<ApiResponse[]>("https://chat-ai-40gz.onrender.com/chat", {
                 userId: "guest",
                 message: message.trim(),
             });

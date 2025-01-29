@@ -10,7 +10,7 @@ export default defineConfig({
   ],
   server: {
     allowedHosts: [
-      '.ngrok.app', // Allow all ngrok subdomains
+      '.onrender.com', // Allow all ngrok subdomains
     ],
   }
 })
