@@ -76,8 +76,8 @@ const Chat: React.FC = () => {
     };
 
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen bg-[#F5E6D3] p-4">
-            <div className="w-full max-w-2xl bg-white shadow-2xl rounded-2xl">
+        <div className="flex flex-col items-center justify-center h-screen bg-[#F5E6D3] ">
+            <div className="w-full h-full max-w-2xl  p-2 bg-white shadow-2xl rounded-2xl">
                 <div className="bg-[#4A321F] rounded-t-2xl p-6 text-center">
                     <h1 className="text-3xl font-bold text-[#F5E6D3] font-serif">
                         ☕ Coffee Man Chat
@@ -119,11 +119,11 @@ const Chat: React.FC = () => {
                     ))}
                     <div ref={messagesEndRef} />
                 </div>
-                <div className="p-6 border-t border-[#E8D5C4]">
-                    <div className="flex space-x-3">
+                <div className="p-2 border-t border-[#E8D5C4]">
+                    <div className="flex space-x-2">
                         <input
                             type="text"
-                            className="flex-1 px-6 py-3 border-2 border-[#D4B596] rounded-xl 
+                            className="flex-1 px-2 py-3 border-2 border-[#D4B596] rounded-xl 
                                      focus:outline-none focus:ring-2 focus:ring-[#4A321F] 
                                      bg-[#FDF8F3] text-[#2C1810] placeholder-[#8B7355]"
                             value={message}
@@ -133,7 +133,7 @@ const Chat: React.FC = () => {
                             disabled={isLoading}
                         />
                         <button
-                            className={`px-8 py-3 rounded-xl font-medium transition-all duration-200
+                            className={`px-8 py-3 rounded-full font-medium transition-all duration-200
                                 ${isLoading
                                     ? "bg-[#8B7355] cursor-not-allowed"
                                     : "bg-[#4A321F] hover:bg-[#2C1810] active:scale-95"
